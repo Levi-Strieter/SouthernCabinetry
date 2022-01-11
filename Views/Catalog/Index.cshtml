@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewData["Title"] = "Catalog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section id="catalog-page" class="d-flex flex-column justify-content-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <h1>Catalog</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="catalogs" class="catalogs">
+    <div class="container">
+        <div class="container">
+            <div class="card-deck">
+                <div class="card rounded" style="width: 18rem;">
+                    <img class="card-img-top" src="~/img/Catalog/Arts.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Arts & Crafts</h5>
+                        <p class="card-text"></p>
+                        <a asp-controller="Catalog" asp-action="SCI_Arts_Crafts_Catalog" class="catalog-btn">View</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="~/img/Catalog/Base.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Base Cabinet Catalog</h5>
+                        <p class="card-text"></p>
+                        <a asp-controller="Catalog" asp-action="SCI_Base_Cabinets_Catalog" class="catalog-btn">View</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="~/img/Catalog/Mobile.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile Cabinet Catalog</h5>
+                        <p class="card-text"></p>
+                        <a asp-controller="Catalog" asp-action="SCI_Mobile_Cabinet_Catalog" class="catalog-btn">View</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="~/img/Catalog/Music.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Music Cabinet Catalog</h5>
+                        <p class="card-text"></p>
+                        <a asp-controller="Catalog" asp-action="SCI_Music_Cabinet_Catalog" class="catalog-btn">View</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="~/img/Catalog/Tall.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Tall Cabinet Catalog</h5>
+                        <p class="card-text"></p>
+                        <a asp-controller="Catalog" asp-action="SCI_Tall_Cabinet_Catalog" class="catalog-btn">View</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="~/img/Catalog/Wall.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Wall Cabinet Catalog</h5>
+                        <p class="card-text"></p>
+                        <a asp-controller="Catalog" asp-action="SCI_Wall_Cabinet_Catalog" class="catalog-btn">View</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="~/img/Catalog/Wardrobe.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Wardrobe Catalog</h5>
+                        <p class="card-text"></p>
+                        <a asp-controller="Catalog" asp-action="SCI_Wardrobe_Cabinet_Catalog" class="catalog-btn">View</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="~/img/Catalog/Casework_Specs.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Casework Specs</h5>
+                        <p class="card-text"></p>
+                        <a asp-controller="Catalog" asp-action="SCI_Casework_Specs" class="catalog-btn">View</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="~/img/Catalog/Catalog_Index.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Catalog Index</h5>
+                        <p class="card-text"></p>
+                        <a asp-controller="Catalog" asp-action="SCI_Catalog_Index" class="catalog-btn">View</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section><!-- End Technology Section -->

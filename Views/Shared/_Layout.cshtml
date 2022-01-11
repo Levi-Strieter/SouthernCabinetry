@@ -1,0 +1,169 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] | Southern Cabinetry</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    @*-- Favicons *@
+    <link rel="apple-touch-icon" sizes="180x180" href="~/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/img/favicon-16x16.png">
+    <link rel="manifest" href="~/img/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    @*-- Google Fonts *@
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    @*-- Vendor CSS Files *@
+    @*--<link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">*@
+    <link href="~/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="~/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/vendor/venobox/venobox.css" rel="stylesheet">
+    @*<link href="~/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">*@
+
+    @*-- Template Main CSS File *@
+    <link href="~/css/style.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+
+    @*-- Global site tag (gtag.js) - Google Analytics *@
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSBK7VP6HG"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VSBK7VP6HG');</script>
+
+    @*-- Global site tag (gtag.js) - Google Ads: 417539653 --*@
+    @*<script async src="https://www.googletagmanager.com/gtag/js?id=AW-417539653"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-417539653');</script>*@
+
+    @*-- =======================================================
+        * Template Name: KnightOne - v2.2.0
+        * Template URL: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/
+        * Author: BootstrapMade.com
+        * License: https://bootstrapmade.com/license/
+        ======================================================== *@
+</head>
+<body>
+    @*-- ======= Header ======= *@
+    <header id="header" class="fixed-top ">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <div class="col-xl-9 d-flex align-items-center justify-content-between">
+                    <h1 class="logo"><a asp-controller="Home" asp-action="Index">SCI</a></h1>
+                    @*-- Uncomment below if you prefer to use an image logo *@
+                    @*-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>*@
+
+
+                    <nav class="nav-menu d-none d-lg-block">
+                        <ul>
+                            <li class="active"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-action="Index" asp-controller="Home" asp-fragment="about">About</a></li>
+                            <li><a asp-action="Index" asp-controller="Home" asp-fragment="services">Technology</a></li>
+                            <li><a asp-action="Index" asp-controller="Home" asp-fragment="portfolio">Portfolio</a></li>
+                            <li class="drop-down">
+                                <a href="#">More</a>
+                                <ul>
+                                    <li><a asp-action="Index" asp-controller="Catalog">Catalog</a></li>
+                                    <li class="drop-down">
+                                        @*<a href="#">Deep Drop Down</a>
+                                        <ul>
+                                            <li><a href="#">Deep Drop Down 1</a></li>
+                                            <li><a href="#">Deep Drop Down 2</a></li>
+                                            <li><a href="#">Deep Drop Down 3</a></li>
+                                            <li><a href="#">Deep Drop Down 4</a></li>
+                                            <li><a href="#">Deep Drop Down 5</a></li>
+                                        </ul>
+                                    </li>*@
+                                    <li><a asp-action="About" asp-controller="Home">Story of SCI</a></li>
+                                    @*<li><a href="#">Drop Down 3</a></li>
+                                    <li><a href="#">Drop Down 4</a></li>*@
+                                </ul>
+                            </li>
+                            <li><a asp-action="Index" asp-controller="Home" asp-fragment="contact">Contact</a></li>
+
+                        </ul>
+                    </nav>@*-- .nav-menu *@
+                    @if (User.Identity.IsAuthenticated)
+                    {
+             
+                      
+                        <a class="get-started-btn scrollto" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignOut">Log Out @User.Identity.Name</a>
+                    }
+                    else
+                    {
+
+                        <a class="get-started-btn scrollto" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignIn">Log In</a>
+                    }
+                    
+
+                </div>
+            </div>
+
+        </div>
+    </header>@*-- End Header *@
+
+
+    @RenderBody()
+
+    @*-- ======= Footer ======= *@
+    <footer id="footer">
+        <div class="container">
+            <h3>Southern Cabinetry</h3>
+            <p>The best plastic laminate casework in the market.</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>Southern Cabinetry</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                @*-- All the links in the footer should remain intact. *@
+                @*-- You can delete the links only if you purchased the pro version. *@
+                @*-- Licensing information: https://bootstrapmade.com/license/ *@
+                @*-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/ *@
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+    </footer>@*-- End Footer *@
+
+    <div id="preloader"></div>
+    <a asp-fragment="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+
+    @*-- Vendor JS Files *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="~/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="~/vendor/counterup/counterup.min.js"></script>
+    <script src="~/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/vendor/venobox/venobox.min.js"></script>
+    @*<script src="~/vendor/owl.carousel/owl.carousel.min.js"></script>*@
+
+    @*-- Template Main JS File *@
+    <script src="~/js/main.min.js"></script>
+
+
+</body>
+</html>
+

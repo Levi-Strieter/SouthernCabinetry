@@ -1,0 +1,586 @@
+﻿@{ 
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@* ======= Hero Section ======= *@
+<section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <h1>Southern Cabinetry</h1>
+                <h2>Commercial Plastic Laminate Casework</h2>
+                @*<a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>*@
+                <section id="scroll-down"><span></span></section>
+            </div>
+        </div>
+    </div>
+</section>@* End Hero *@
+
+<main id="main">
+
+    @* ======= About Us Section ======= *@
+    <section id="about" class="about">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>A highly automated plastic laminate casework company based out of Bidwell, Ohio. We mainly focus on educational and institutional caseowrk produts; producing all of our cabinets with attention to the smallest detail. </p>
+            </div>
+
+            <div class="row content">
+                <div class="col-lg-6">
+                    <p>
+                        Some of our main products include, but are not limted to:
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check-double"></i> Plastic Laminate Cabinetry, such as: Wall Cabinets, Base Cabinets, Tall Cabinets, etc. </li>
+                        <li><i class="fas fa-check-double"></i> Reception and Nursing Stations </li>
+                        <li><i class="fas fa-check-double"></i> Solid Surface, Plastic Laminate, and Phenolic Countertops. </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0">
+                    <p>
+                        With the perfect shop size and automated production standards, Southern Cabinetry has the quickest turn around times of any
+                        other plastic laminate casework shop. If you want to learn more about the story of how Southern Cabinetry was created click the Learn More button.
+                    </p>
+                    <a asp-controller="Home" asp-action="About" class="btn-learn-more">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </section>@* End About Us Section *@
+    @* ======= Technology Section ======= *@
+    <section id="services" class="services">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Technology</h2>
+                <p>At Southerrn Cabinetry Inc. we take pride in our highly automated shop. Not only do we have top of the line machines in the industry, but also have robots to run these machines.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box">
+                        <div class="icon"><i class="fas fa-robot"></i></div>
+                        <h4><a href="">Robotic Automation</a></h4>
+                        <p>Robot Arms from Fanuc Robotics to help speed up production process. </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="fas fa-fan"></i></div>
+                        <h4><a href="">Beam Saws</a></h4>
+                        <p>Two self loading Beam Saws capable of cutting up to 6 inches of total board thickness. </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="fas fa-calendar-week"></i></div>
+                        <h4><a href="">Multiple Feed Through CNC's</a></h4>
+                        <p>Feed Through CNC's with top and bottom heads to make left and right cabinet sides in a third of the time of a standard CNC.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                        <div class="icon"><i class="fas fa-warehouse"></i></div>
+                        <h4><a href="">Seperate Custom Shop</a></h4>
+                        <p>A seperate building for the custom shop to speed up production of more custom made items, such as a nursing station and reception desks.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                        <div class="icon"><i class="fas fa-layer-group  "></i></div>
+                        <h4><a href="">Automated Lay-Up Line</a></h4>
+                        <p>Over 30,720 square feet of plastic laminate can be laid up in a single shift with our automated feed through glue spreaders and multiple presses. </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                        <div class="icon"><i class="fas fa-code-branch"></i></div>
+                        <h4><a href="">Multiple Assembly Lines</a></h4>
+                        <p>To keep up with high production rates, multiple assembly lines are needed to produce different size casework cabinets. </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>@* End Technology Section *@
+    @* ======= Cta Section ======= *@
+    <section id="cta" class="cta">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-left">
+                    <h3>SCI Catalog</h3>
+
+                    <p>
+                        Please view our full catalog to see everything that Southern Cabinetry Offers!
+                    </p>
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <a class="cta-btn align-middle" asp-controller="Catalog" asp-action="Index">View</a>
+                </div>
+            </div>
+
+        </div>
+    </section>@* End Cta Section *@
+    @* ======= Features Section ======= *@
+    <section id="features" class="features">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="icon-box mt-5 mt-lg-0">
+                        <i class="fas fa-graduation-cap fa-xs"></i>
+                        <h4>Higher Education</h4>
+                        <p>Facilitating college students to have a tidy organized work space to create a good study environment.</p>
+                    </div>
+                    <div class="icon-box mt-5">
+                        <i class="fas fa-school fa-xs"></i>
+                        <h4>K-12</h4>
+                        <p>Helping students study diligently with casework that can take serious abuse.</p>
+                    </div>
+                    <div class="icon-box mt-5">
+                        <i class="fas fa-flask fa-xs"></i>
+                        <h4>Labratory</h4>
+                        <p>Chemicals spilled, no problem! Labratory casework can stand up to the toughest abuse and messiest science experiment. </p>
+                    </div>
+                    <div class="icon-box mt-5">
+                        <i class="fas fa-football-ball fa-xs"></i>
+                        <h4>Athletics</h4>
+                        <p>Casework to make the locker room look as good as the team. Available in team colors and for offices and storage. </p>
+                    </div>
+                    <div class="icon-box mt-5">
+                        <i class="fas fa-volume-up fa-xs"></i>
+                        <h4>Music</h4>
+                        <p>Casework with the sound of money well spent, designed with specific music panels to provide crystal clear audio. </p>
+                    </div>
+                    <div class="icon-box mt-5">
+                        <i class="fas fa-clinic-medical fa-xs"></i>
+                        <h4>HealthCare</h4>
+                        <p>Casework for any medical purposes - medical centers, nursing stations, offices</p>
+                    </div>
+                </div>
+                <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("../img/features.jpg");'></div>
+            </div>
+
+        </div>
+    </section>
+    @* ======= Clients Section ======= *@
+    <section id="clients" class="clients">
+        <div class="container">
+
+            <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="~/img/clients/Formica.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="~/img/clients/Wilsonart.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="~/img/clients/Corian.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="~/img/clients/arauco.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="~/img/clients/AWI.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="~/img/clients/AWI_Cert.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="~/img/clients/nevamar.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="~/img/clients/Pionite.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>@* End Clients Section *@
+    @* ======= Counts Section ======= *@
+    <section id="counts" class="counts">
+        <div class="container">
+
+            <div class="text-center title">
+                <h3>What we have achieved so far</h3>
+                <p>Some of Sothern Cabinetry's many achivements. </p>
+            </div>
+
+            <div class="row counters">
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-toggle="counter-up">232</span>
+                    <p>Clients</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-toggle="counter-up">521</span>
+                    <p>Projects</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-toggle="counter-up">1,463</span>
+                    <p>Hours Of Support</p>
+                </div>
+
+                <div class="col-lg-3 col-6 text-center">
+                    <span data-toggle="counter-up">15</span>
+                    <p>Hard Workers</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>@* End Counts Section *@
+    @* ======= Portfolio Section ======= *@
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <p>Below is a collection of some fininshed products that Southern Cbainetry Produced. Click on the Button below to sort the pictures into specific catagories!</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-app">Casework</li>
+                        <li data-filter=".filter-card">Solid Surface</li>
+                        <li data-filter=".filter-web">Desks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <img src="~/img/portfolio/Casework1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Art Room</h4>
+                        <p></p>
+                        <a href="~/img/portfolio/Casework1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Art Room"><i class="bx bx-plus"></i></a>
+                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <img src="~/img/portfolio/Desk1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Reception Desk</h4>
+                        <p></p>
+                        <a href="~/img/portfolio/Desk1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Reception Desk"><i class="bx bx-plus"></i></a>
+                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <img src="~/img/portfolio/Casework2.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Science Lab</h4>
+                        <p></p>
+                        <a href="~/img/portfolio/Casework2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Science Lab"><i class="bx bx-plus"></i></a>
+                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <img src="~/img/portfolio/SolidSurface1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Teacher Workstation</h4>
+                        <p></p>
+                        <a href="~/img/portfolio/SolidSurface1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Teacher Workstation"><i class="bx bx-plus"></i></a>
+                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <img src="~/img/portfolio/Desk2.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Library Desk</h4>
+                        <p></p>
+                        <a href="~/img/portfolio/Desk2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Library Desk"><i class="bx bx-plus"></i></a>
+                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <img src="~/img/portfolio/Casework3.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Healthcare Station</h4>
+                        <p></p>
+                        <a href="~/img/portfolio/Casework3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Healthcare Station"><i class="bx bx-plus"></i></a>
+                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <img src="~/img/portfolio/SolidSurface2.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Nursing Station</h4>
+                        <p></p>
+                        <a href="~/img/portfolio/SolidSurface2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Nursing Station"><i class="bx bx-plus"></i></a>
+                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <img src="~/img/portfolio/SolidSurface3.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Circulation Desk</h4>
+                        <p></p>
+                        <a href="~/img/portfolio/SolidSurface3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Circulation Desk"><i class="bx bx-plus"></i></a>
+                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <img src="~/img/portfolio/Desk3.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Registration Desk</h4>
+                        <p></p>
+                        <a href="~/img/portfolio/Desk3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Registration Desk"><i class="bx bx-plus"></i></a>
+                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>@* End Portfolio Section *@
+    @* ======= Pricing Section ======= *@
+    @*<section id="pricing" class="pricing">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Pricing</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="box">
+                            <h3>Free</h3>
+                            <h4><sup>$</sup>0<span> / month</span></h4>
+                            <ul>
+                                <li>Aida dere</li>
+                                <li>Nec feugiat nisl</li>
+                                <li>Nulla at volutpat dola</li>
+                                <li class="na">Pharetra massa</li>
+                                <li class="na">Massa ultricies mi</li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+                        <div class="box recommended">
+                            <span class="recommended-badge">Recommended</span>
+                            <h3>Business</h3>
+                            <h4><sup>$</sup>19<span> / month</span></h4>
+                            <ul>
+                                <li>Aida dere</li>
+                                <li>Nec feugiat nisl</li>
+                                <li>Nulla at volutpat dola</li>
+                                <li>Pharetra massa</li>
+                                <li class="na">Massa ultricies mi</li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                        <div class="box">
+                            <h3>Developer</h3>
+                            <h4><sup>$</sup>29<span> / month</span></h4>
+                            <ul>
+                                <li>Aida dere</li>
+                                <li>Nec feugiat nisl</li>
+                                <li>Nulla at volutpat dola</li>
+                                <li>Pharetra massa</li>
+                                <li>Massa ultricies mi</li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>*@
+    @* End Pricing Section *@
+    @* ======= Faq Section ======= *@
+    <section id="faq" class="faq">
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+                    <div class="content">
+                        <h3>Frequently Asked <strong>Questions</strong></h3>
+                        <p>
+                            Frequently asked questions that are usually asked to the reception desk.
+                        </p>
+                    </div>
+
+                    <div class="accordion-list">
+                        <ul>
+                            <li>
+                                <a data-toggle="collapse" class="collapse" href="#accordion-list-1">Does SCI Produce Home Kitchen Cabinets? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                                    <p>
+                                        No, SCI is a commercial casework company that only sells to institutional and educational facilities
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a data-toggle="collapse" href="#accordion-list-2" class="collapsed">What is the Backstory to SCI?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                                    <p>
+                                        SCI has it's story on the About Us page, please <a asp-controller="Home" asp-action="About">Click Here</a> to learn how SCI rose to the top.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a data-toggle="collapse" href="#accordion-list-3" class="collapsed">What Does SCI use Robots for?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                                    <p>
+                                        SCI uses robotic arms for tasks like feading and loading machines. We are also in process of having robots build the cabinets.
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("../img/faq.jpg");'>&nbsp;</div>
+            </div>
+
+        </div>
+    </section>@* End Faq Section *@
+    @* ======= Contact Section ======= *@
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Please do not hesitate to contact us with any questions regarding our services or any other inqueries about our shop.</p>
+            </div>
+        </div>
+
+        <div>
+            <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBN_ohuemFxZBB-Arczp6Xi7v84igdr6Cc&q=41+international+blvd&zoom=40" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="container">
+
+            <div class="row mt-5">
+
+                <div class="col-lg-4">
+                    <div class="info">
+                        <div class="address">
+                            <i class="ri-map-pin-line"></i>
+                            <h4>Location:</h4>
+                            <p>41 International Blvd, Ohio, OH 45614</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="ri-mail-line"></i>
+                            <h4>Email:</h4>
+                            <p>Shop.SouthernCabinetry@gmail.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="ri-phone-line"></i>
+                            <h4>Call:</h4>
+                            <p>+1 740 245 5912</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 mt-5 mt-lg-0">
+
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="form-row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validate"></div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validate"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validate"></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>@* End Contact Section *@
+
+</main>@* End #main *@
